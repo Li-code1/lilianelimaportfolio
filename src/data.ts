@@ -185,7 +185,7 @@ export const TIMELINE: TimelineItem[] = [
   },
   {
     period: '03/2025 — 07/2027',
-    title: 'Análise e Desenvolvimento de Sistemas (EAD-cursando)',
+    title: 'Análise e Desenvolvimento de Sistemas (EAD- Cursando)',
     place: 'Faculdade IMES',
     kind: 'formacao',
   },
