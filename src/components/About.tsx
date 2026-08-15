@@ -56,7 +56,7 @@ export default function About() {
               o mesmo cuidado que aprendi lidando com pessoas e dinheiro real.
             </p>
             <p className="text-ink">
-              O resultado é um perfil raro: comunicação assertiva, raciocínio analítico e a disciplina técnica para
+              O resultado é um perfil com: comunicação assertiva, raciocínio analítico e a disciplina técnica para
               transformar isso em software que funciona e que é testado antes de chegar à produção.
             </p>
           </div>
