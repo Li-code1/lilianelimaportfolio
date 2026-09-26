@@ -190,7 +190,7 @@
     box-shadow: none;
   }
 
-  .hamburger {
+    .hamburger {
     display: none;
     flex-shrink: 0;
     width: 42px;
@@ -202,23 +202,42 @@
     background: var(--surface);
     cursor: pointer;
     position: relative;
+    padding: 0; /* Garante que nenhum padding padrão de botão desalinhe o conteúdo */
   }
-  .hamburger span, .hamburger span::before, .hamburger span::after {
-    content: '';
+  .hamburger span {
     position: absolute;
-    left: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 2px;
     background: var(--ink);
-    transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease;
+    transition: background-color 0.25s ease;
   }
-  .hamburger span { top: 20px; }
-  .hamburger span::before { top: -7px; }
-  .hamburger span::after { top: 7px; }
-  .hamburger[aria-expanded="true"] span { background: transparent; }
-  .hamburger[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); background: var(--ink); }
-  .hamburger[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); background: var(--ink); }
+  .hamburger span::before, .hamburger span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: var(--ink);
+    transition: transform 0.25s ease, top 0.25s ease;
+  }
+  .hamburger span::before { top: -6px; }
+  .hamburger span::after { top: 6px; }
 
+  /* Estado Aberto (X) */
+  .hamburger[aria-expanded="true"] span { 
+    background: transparent; 
+  }
+  .hamburger[aria-expanded="true"] span::before { 
+    top: 0; 
+    transform: rotate(45deg); 
+  }
+  .hamburger[aria-expanded="true"] span::after { 
+    top: 0; 
+    transform: rotate(-45deg); 
+  }
   .mobile-panel {
     display: none;
     flex-direction: column;
