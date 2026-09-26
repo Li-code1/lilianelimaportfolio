@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liliane de Lima Santos — Desenvolvedora Full Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <div class="brand">
+      Liliane de Lima Santos
+      <small>Desenvolvedora Full Stack Júnior</small>
+    </div>
+
+    <nav class="primary-nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#competencias">Competências</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+      <a class="cta-btn desktop-only" id="downloadCv" href="assets/Liliane-de-Lima-Santos-CV.pdf" download="Liliane-de-Lima-Santos-CV.pdf">
+        <span>Baixar currículo</span>
+      </a>
+      <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="wrap mobile-panel" id="mobilePanel" aria-label="Menu mobile">
+    <a href="#sobre">Sobre</a>
+    <a href="#competencias">Competências</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+    <a id="downloadCvMobile" href="assets/Liliane-de-Lima-Santos-CV.pdf" download="Liliane-de-Lima-Santos-CV.pdf">
+      <span>Baixar currículo</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="sobre">
+    <div class="wrap hero">
+      <div>
+        <p class="hero-eyebrow">
+          <span>Praia Grande e região (presencial/híbrido) · Brasil (remoto)</span>
+        </p>
+        <h1>Desenvolvedora Full Stack <em>Júnior</em></h1>
+        <p class="lede">
+          Sou Liliane de Lima Santos, desenvolvedora full stack júnior graduanda em Análise e Desenvolvimento de Sistemas, com especialização em DevSecOps. Depois de 7 anos no setor financeiro no Itaú, trago rigor analítico e foco no cliente para a construção de software seguro e escalável com Python, Java e React.
+      
+        <div class="hero-actions">
+          <a class="cta-btn" href="#projetos">Ver projetos</a>
+          <a class="cta-btn ghost" href="#contato">Falar comigo</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>7</strong>
+            <span>anos no setor financeiro</span>
+          </div>
+          <div>
+            <strong>6</strong>
+            <span>projetos pessoais entregues</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>stacks: Python, Java e React</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-blob" aria-hidden="true"></div>
+        <div class="hero-photo">
+          <img src="assets/profile-photo.jpg" alt="Retrato de Liliane de Lima Santos">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / FORMAÇÃO -->
+  <section id="formacao">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Trajetória</p>
+        <h2>De caixa bancária a desenvolvedora full stack</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>Depois de sete anos no Banco Itaú, entre operações financeiras, tesouraria e venda consultiva, decidi migrar de carreira para a tecnologia. Essa vivência me deu disciplina, atenção a regras de conformidade e comunicação assertiva — habilidades que aplico hoje na forma como escrevo e testo software.</p>
+          <p>Hoje estudo Análise e Desenvolvimento de Sistemas, curso Full Stack em Python pela EBAC e me especializo em DevSecOps pelo programa Hackers do Bem (Softex, SENAI, RNP e Ministério da Ciência).</p>
+        </div>
+        <div class="timeline">
+          <div class="item">
+            <span>03/2025 — 07/2027</span>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>Faculdade IMES — graduação em andamento</p>
+          </div>
+          <div class="item">
+            <span>12/2025 — 06/2026</span>
+            <h3>Full Stack Python</h3>
+            <p>Curso profissionalizante — EBAC</p>
+          </div>
+          <div class="item">
+            <span>2026</span>
+            <h3>DevOps &amp; DevSecOps</h3>
+            <p>Especialização — Programa Hackers do Bem</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETÊNCIAS -->
+  <section id="competencias">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Stack técnica</p>
+        <h2>Competências</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span>Back-end &amp; linguagens</span>
+          </h3>
+          <p>Java 17, Spring Boot 3, Python (FastAPI, Django), TypeScript, arquitetura em camadas (DTOs), APIs RESTful, POO e programação assíncrona.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span>Front-end</span>
+          </h3>
+          <p>React.js, Next.js (App Router), TypeScript, Tailwind CSS, Context API, CSS Modules, HTML5, CSS3, Bootstrap e SASS.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span>Banco de dados &amp; cache</span>
+          </h3>
+          <p>PostgreSQL, SQLite, H2 Database, Redis e ORM com Spring Data JPA e SQLAlchemy.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span>Testes &amp; qualidade</span>
+          </h3>
+          <p>JUnit 5, MockMvc, Pytest (Pytest-Cov), Swagger UI / OpenAPI e validação de regras de negócio via códigos HTTP.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span>DevOps, CI/CD &amp; segurança</span>
+          </h3>
+          <p>Docker, Docker Compose, GitHub Actions, Kubernetes, ELK Stack, fundamentos de DevSecOps e sanitização de dados.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span>Ferramentas &amp; metodologias</span>
+          </h3>
+          <p>Git, GitHub, Maven, Poetry, Scrum e Kanban.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Portfólio</p>
+        <h2>Projetos relevantes</h2>
+      </div>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Java · Spring Boot 3</span>
+          <time>09/2026</time>
+        </div>
+        <div>
+          <h3>Sistema de Controle de Oficina Mecânica</h3>
+          <p>API RESTful para gestão centralizada de clientes, veículos e ordens de serviço. Arquitetura em camadas com DTOs, validação de CPF/placa, persistência H2/PostgreSQL e conteinerização com Docker Compose. Suíte de testes de integração (JUnit 5 + MockMvc) e documentação via Swagger UI.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/oficina-mecanica-spring.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Python · Django</span>
+          <time>09/2026</time>
+        </div>
+        <div>
+          <h3>Gerenciador de Estoque Web</h3>
+          <p>Aplicação web de inventário modernizada a partir de um script CLI. Padrão MVT, modelagem via ORM, Class-Based Views para CRUD completo e gerenciamento de dependências com Poetry. Painel administrativo com filtros de busca.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/gerenciar-estoque-django.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Python · FastAPI · Redis</span>
+          <time>06/2026</time>
+        </div>
+        <div>
+          <h3>PokeFast API</h3>
+          <p>API RESTful de alta performance que combina consumo assíncrono (asyncio/httpx) da PokéAPI com repositório relacional local (CRUD). Cache temporário com Redis, schemas validados com Pydantic, conteinerização Docker e CI/CD via GitHub Actions. Publicada em produção na Render.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/pokefast-api.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://pokefast-api-ebac.onrender.com/docs" rel="noopener">Visualizar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Next.js 14</span>
+          <time>01/2026</time>
+        </div>
+        <div>
+          <h3>Portal de Viagens</h3>
+          <p>Aplicação para exploração turística com Next.js 14 (App Router), rotas dinâmicas por ID, componentes reutilizáveis, layouts persistentes e estilos isolados via CSS Modules.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/portal-viagens.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://portal-viagens-mocha.vercel.app" rel="noopener">Visualizar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">HTML5 · Tailwind CSS</span>
+          <time>12/2025</time>
+        </div>
+        <div>
+          <h3>Pet&amp;Style</h3>
+          <p>Interface para uma loja fictícia de produtos pet, com HTML5 semântico, Tailwind CSS mobile-first, grid adaptável de produtos e JavaScript puro para menu hambúrguer e footer dinâmico.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/petstyle-loja-virtual.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://li-code1.github.io/petstyle-loja-virtual" rel="noopener">Visualizar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">React · TypeScript · Supabase</span>
+          <time>06/2026</time>
+        </div>
+        <div>
+          <h3>SmartFinance</h3>
+          <p>Plataforma de inteligência financeira que transforma transações em métricas analíticas e metas de economia. Dashboard interativo (Recharts), autenticação real e multiusuário com Supabase (PostgreSQL + Row Level Security) e relatórios exportáveis em PDF (jsPDF + html2canvas).</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/smart-finance.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://smart-finance-teal-six.vercel.app" rel="noopener">Visualizar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Bagagem profissional</p>
+        <h2>Experiência</h2>
+      </div>
+      <div class="exp-card">
+        <header>
+          <h3>Banco Itaú Unibanco — Praia Grande/SP</h3>
+          <span>08/2007 — 12/2014</span>
+        </header>
+        <div class="exp-role">
+          <h4>Operações Financeiras e Tesouraria (2009–2014)</h4>
+          <p>Execução de rotinas de caixa de alto fluxo (pagamentos, saques, depósitos e conciliações), com exatidão operacional e cumprimento integral das normas de conformidade e segurança bancária.</p>
+        </div>
+        <div class="exp-role">
+          <h4>Venda Consultiva e Negociação (2007–2009)</h4>
+          <p>Comercialização de produtos financeiros (crédito consignado, seguros, cartões e previdência privada) na FAI, com foco em metas e prospecção de públicos diversos.</p>
+        </div>
+        <div class="exp-role">
+          <h4>Atendimento e Resolução de Problemas</h4>
+          <p>Diagnóstico ágil das demandas dos clientes, aplicando inteligência emocional, adaptabilidade e técnicas de retenção.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2>Vamos conversar?</h2>
+          <p>Estou em busca da minha primeira oportunidade como desenvolvedora full stack, presencial ou híbrida em Praia Grande e região, ou remota em qualquer lugar do Brasil.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:lilianelimafullstackdeveloper@gmail.com">✉️ lilianelimafullstackdeveloper@gmail.com</a>
+          <a href="tel:+5513996079947">📱 (13) 99607-9947</a>
+          <a href="https://www.linkedin.com/in/liliane-lima-ti" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a href="https://github.com/Li-code1" target="_blank" rel="noopener">🖥️ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">Liliane de Lima Santos</p>
+      <p>Desenvolvedora Full Stack Júnior</p>
+      <p>Praia Grande e região — SP</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Links do rodapé">
+      <p class="footer-heading">Navegação</p>
+      <a href="#sobre">Sobre</a>
+      <a href="#competencias">Competências</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <address class="footer-contact">
+      <p class="footer-heading">Contato</p>
+      <a href="mailto:lilianelimafullstackdeveloper@gmail.com">lilianelimafullstackdeveloper@gmail.com</a>
+      <a href="tel:+5513996079947">(13) 99607-9947</a>
+      <a href="https://www.linkedin.com/in/liliane-lima-ti" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Li-code1" target="_blank" rel="noopener">GitHub</a>
+    </address>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© 2026 Liliane de Lima Santos. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
