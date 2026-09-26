@@ -15,8 +15,6 @@ Landing page pessoal de **Liliane de Lima Santos**, Desenvolvedora Full Stack J�
 - **Modo claro / escuro** com detecção automática da preferência do sistema (`prefers-color-scheme`) e alternância manual persistida em `localStorage`.
 - **Menu hambúrguer** acessível para navegação em telas menores.
 - **Botão "voltar ao topo"** que aparece após rolagem da página.
-- **Bilíngue (PT-BR / EN)** — todo o conteúdo pode ser alternado em tempo real, sem recarregar a página.
-- **Download do currículo em PDF** direto pelo botão do menu.
 - **HTML semântico** (`header`, `nav`, `main`, `section`, `article`, `footer`) e boas práticas de acessibilidade (`aria-*`, foco visível, `prefers-reduced-motion`).
 - Sem dependências de build — basta abrir o `index.html` ou publicar em qualquer hospedagem de arquivos estáticos.
 
