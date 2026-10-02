@@ -1,5 +1,6 @@
 (function () {
   var STORAGE_THEME = 'liliane-portfolio-theme';
+  var STORAGE_LANG = 'liliane-portfolio-lang';
   var root = document.documentElement;
   var themeIcon = document.getElementById('themeIcon');
   var themeToggle = document.getElementById('themeToggle');
@@ -26,6 +27,32 @@
     var next = current === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     try { localStorage.setItem(STORAGE_THEME, next); } catch (e) { /* ignore */ }
+  });
+
+  // Language toggle
+  var langPt = document.getElementById('langPt');
+  var langEn = document.getElementById('langEn');
+
+  function applyLang(lang) {
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang === 'en' ? 'en' : 'pt-BR');
+    root.classList.remove('lang-pt', 'lang-en');
+    root.classList.add(lang === 'en' ? 'lang-en' : 'lang-pt');
+    langPt.setAttribute('aria-pressed', String(lang === 'pt'));
+    langEn.setAttribute('aria-pressed', String(lang === 'en'));
+  }
+
+  var savedLang = null;
+  try { savedLang = localStorage.getItem(STORAGE_LANG); } catch (e) { /* ignore */ }
+  applyLang(savedLang === 'en' ? 'en' : 'pt');
+
+  langPt.addEventListener('click', function () {
+    applyLang('pt');
+    try { localStorage.setItem(STORAGE_LANG, 'pt'); } catch (e) { /* ignore */ }
+  });
+  langEn.addEventListener('click', function () {
+    applyLang('en');
+    try { localStorage.setItem(STORAGE_LANG, 'en'); } catch (e) { /* ignore */ }
   });
 
   // Hamburger menu
