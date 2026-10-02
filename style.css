@@ -145,7 +145,6 @@
   .header-actions {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
     gap: 10px;
   }
 
@@ -153,7 +152,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -166,6 +164,28 @@
     transition: transform 0.15s ease, background 0.2s ease;
   }
   .icon-btn:hover { transform: translateY(-1px); background: var(--surface-2); }
+
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .lang-toggle button {
+    border: none;
+    background: transparent;
+    color: var(--ink-soft);
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 0.76rem;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .lang-toggle button[aria-pressed="true"] {
+    background: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+    color: #fff;
+  }
 
   .cta-btn {
     display: inline-flex;
@@ -190,7 +210,7 @@
     box-shadow: none;
   }
 
-    .hamburger {
+  .hamburger {
     display: none;
     flex-shrink: 0;
     width: 42px;
@@ -202,7 +222,7 @@
     background: var(--surface);
     cursor: pointer;
     position: relative;
-    padding: 0; /* Garante que nenhum padding padrão de botão desalinhe o conteúdo */
+    padding: 0;
   }
   .hamburger span {
     position: absolute;
@@ -226,18 +246,10 @@
   .hamburger span::before { top: -6px; }
   .hamburger span::after { top: 6px; }
 
-  /* Estado Aberto (X) */
-  .hamburger[aria-expanded="true"] span { 
-    background: transparent; 
-  }
-  .hamburger[aria-expanded="true"] span::before { 
-    top: 0; 
-    transform: rotate(45deg); 
-  }
-  .hamburger[aria-expanded="true"] span::after { 
-    top: 0; 
-    transform: rotate(-45deg); 
-  }
+  .hamburger[aria-expanded="true"] span { background: transparent; }
+  .hamburger[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
+  .hamburger[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
+
   .mobile-panel {
     display: none;
     flex-direction: column;
@@ -453,6 +465,7 @@
     border-radius: 20px;
     padding: 30px;
   }
+  .exp-card + .exp-card { margin-top: 20px; }
   .exp-card header {
     display: flex;
     justify-content: space-between;
@@ -578,3 +591,11 @@
     z-index: 50;
   }
   #scrollTop.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+  /* Language visibility: only the WRONG language gets hidden (forced with
+     !important), and only for the language that ISN'T active. This means
+     the active language keeps whatever "display" its own component CSS
+     already gives it (e.g. .brand small's "display:block"), instead of
+     fighting over specificity with a generic show/hide rule per tag. */
+  html.lang-pt [data-i18n-lang="en"] { display: none !important; }
+  html.lang-en [data-i18n-lang="pt"] { display: none !important; }
