@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-lang="pt" class="lang-pt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,11 +7,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.ico?v=4" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=4">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=4">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=4">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -19,23 +19,34 @@
   <div class="wrap header-row">
     <div class="brand">
       Liliane de Lima Santos
-      <small>Desenvolvedora Full Stack Júnior</small>
+      <small data-i18n-lang="pt">Desenvolvedora Full Stack Júnior</small>
+      <small data-i18n-lang="en">Junior Full Stack Developer</small>
     </div>
 
     <nav class="primary-nav" aria-label="Navegação principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#competencias">Competências</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#contato">Contato</a>
+      <a href="#sobre" data-i18n-lang="pt">Sobre</a>
+      <a href="#sobre" data-i18n-lang="en">About</a>
+      <a href="#competencias" data-i18n-lang="pt">Competências</a>
+      <a href="#competencias" data-i18n-lang="en">Skills</a>
+      <a href="#projetos" data-i18n-lang="pt">Projetos</a>
+      <a href="#projetos" data-i18n-lang="en">Projects</a>
+      <a href="#experiencia" data-i18n-lang="pt">Experiência</a>
+      <a href="#experiencia" data-i18n-lang="en">Experience</a>
+      <a href="#contato" data-i18n-lang="pt">Contato</a>
+      <a href="#contato" data-i18n-lang="en">Contact</a>
     </nav>
 
     <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" id="langPt" aria-pressed="true">PT</button>
+        <button type="button" id="langEn" aria-pressed="false">EN</button>
+      </div>
       <button type="button" class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
         <span id="themeIcon" aria-hidden="true">🌙</span>
       </button>
       <a class="cta-btn desktop-only" id="downloadCv" href="assets/Liliane-de-Lima-Santos-CV.pdf" download="Liliane-de-Lima-Santos-CV.pdf">
-        <span>Baixar currículo</span>
+        <span data-i18n-lang="pt">Baixar currículo</span>
+        <span data-i18n-lang="en">Download resume</span>
       </a>
       <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
         <span></span>
@@ -44,13 +55,19 @@
   </div>
 
   <nav class="wrap mobile-panel" id="mobilePanel" aria-label="Menu mobile">
-    <a href="#sobre">Sobre</a>
-    <a href="#competencias">Competências</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#contato">Contato</a>
+    <a href="#sobre" data-i18n-lang="pt">Sobre</a>
+    <a href="#sobre" data-i18n-lang="en">About</a>
+    <a href="#competencias" data-i18n-lang="pt">Competências</a>
+    <a href="#competencias" data-i18n-lang="en">Skills</a>
+    <a href="#projetos" data-i18n-lang="pt">Projetos</a>
+    <a href="#projetos" data-i18n-lang="en">Projects</a>
+    <a href="#experiencia" data-i18n-lang="pt">Experiência</a>
+    <a href="#experiencia" data-i18n-lang="en">Experience</a>
+    <a href="#contato" data-i18n-lang="pt">Contato</a>
+    <a href="#contato" data-i18n-lang="en">Contact</a>
     <a id="downloadCvMobile" href="assets/Liliane-de-Lima-Santos-CV.pdf" download="Liliane-de-Lima-Santos-CV.pdf">
-      <span>Baixar currículo</span>
+      <span data-i18n-lang="pt">Baixar currículo</span>
+      <span data-i18n-lang="en">Download resume</span>
     </a>
   </nav>
 </header>
@@ -61,28 +78,38 @@
     <div class="wrap hero">
       <div>
         <p class="hero-eyebrow">
-          <span> São Paulo (híbrido) · Brasil (remoto)</span>
+          <span data-i18n-lang="pt">Praia Grande – SP · avalio oportunidades em São Paulo (híbrido)</span>
+          <span data-i18n-lang="en">Praia Grande, Brazil · open to hybrid roles in São Paulo</span>
         </p>
-        <h1>Desenvolvedora Full Stack <em>Júnior</em></h1>
-        <p class="lede">
+        <h1 data-i18n-lang="pt">Desenvolvedora Full Stack <em>Júnior</em></h1>
+        <h1 data-i18n-lang="en">Full Stack Developer <em>Junior</em></h1>
+        <p class="lede" data-i18n-lang="pt">
           Sou Liliane de Lima Santos, desenvolvedora full stack júnior graduanda em Análise e Desenvolvimento de Sistemas, com especialização em DevSecOps. Depois de 7 anos no setor financeiro no Itaú, trago rigor analítico e foco no cliente para a construção de software seguro e escalável com Python, Java e React.
-      
+        </p>
+        <p class="lede" data-i18n-lang="en">
+          I'm Liliane de Lima Santos, a junior full stack developer completing a degree in Systems Analysis and Development, with a specialization in DevSecOps. After 7 years in the financial sector at Itaú, I bring analytical rigor and customer focus to building secure, scalable software with Python, Java and React.
+        </p>
         <div class="hero-actions">
-          <a class="cta-btn" href="#projetos">Ver projetos</a>
-          <a class="cta-btn ghost" href="#contato">Falar comigo</a>
+          <a class="cta-btn" href="#projetos" data-i18n-lang="pt">Ver projetos</a>
+          <a class="cta-btn" href="#projetos" data-i18n-lang="en">View projects</a>
+          <a class="cta-btn ghost" href="#contato" data-i18n-lang="pt">Falar comigo</a>
+          <a class="cta-btn ghost" href="#contato" data-i18n-lang="en">Get in touch</a>
         </div>
         <div class="hero-stats">
           <div>
             <strong>7</strong>
-            <span>anos no setor financeiro</span>
+            <span data-i18n-lang="pt">anos no setor financeiro</span>
+            <span data-i18n-lang="en">years in finance</span>
           </div>
           <div>
             <strong>6</strong>
-            <span>projetos pessoais entregues</span>
+            <span data-i18n-lang="pt">projetos pessoais entregues</span>
+            <span data-i18n-lang="en">personal projects shipped</span>
           </div>
           <div>
             <strong>3</strong>
-            <span>stacks: Python, Java e React</span>
+            <span data-i18n-lang="pt">stacks: Python, Java e React</span>
+            <span data-i18n-lang="en">stacks: Python, Java &amp; React</span>
           </div>
         </div>
       </div>
@@ -99,29 +126,46 @@
   <section id="formacao">
     <div class="wrap">
       <div class="section-head">
-        <p class="section-kicker">Trajetória</p>
-        <h2>De caixa bancária a desenvolvedora full stack</h2>
+        <p class="section-kicker" data-i18n-lang="pt">Trajetória</p>
+        <p class="section-kicker" data-i18n-lang="en">Background</p>
+        <h2 data-i18n-lang="pt">De caixa bancária a desenvolvedora full stack</h2>
+        <h2 data-i18n-lang="en">From bank teller to full stack developer</h2>
       </div>
       <div class="about-grid">
         <div>
-          <p>Depois de sete anos no Banco Itaú, entre operações financeiras, tesouraria e venda consultiva, decidi migrar de carreira para a tecnologia. Essa vivência me deu disciplina, atenção a regras de conformidade e comunicação assertiva — habilidades que aplico hoje na forma como escrevo e testo software.</p>
-          <p>Hoje estudo Análise e Desenvolvimento de Sistemas, formada em Desenvolvimento Full Stack em Python pela EBAC e me especializei em DevSecOps pelo programa Hackers do Bem (Softex, SENAI, RNP e Ministério da Ciência).</p>
+          <p data-i18n-lang="pt">Depois de sete anos no Banco Itaú, entre operações financeiras, tesouraria e venda consultiva, decidi migrar de carreira para a tecnologia. Essa vivência me deu disciplina, atenção a regras de conformidade e comunicação assertiva — habilidades que aplico hoje na forma como escrevo e testo software.</p>
+          <p data-i18n-lang="en">After seven years at Banco Itaú — spanning financial operations, treasury and consultative sales — I made a career shift into technology. That experience gave me discipline, an eye for compliance and clear communication, which now shape the way I write and test software.</p>
+          <p data-i18n-lang="pt">Hoje estudo Análise e Desenvolvimento de Sistemas, sou formada em Desenvolvimento Full Stack em Python pela EBAC, concluí o curso de Teste de Software (QA) e me especializei em DevSecOps pelo programa Hackers do Bem (Softex, SENAI, RNP e Ministério da Ciência).</p>
+          <p data-i18n-lang="en">Today I'm studying Systems Analysis and Development, completed a Full Stack Python program at EBAC, finished a Software Testing (QA) course, and specialized in DevSecOps through the Hackers do Bem program (Softex, SENAI, RNP and the Ministry of Science).</p>
         </div>
         <div class="timeline">
           <div class="item">
             <span>03/2025 — 10/2027</span>
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
-            <p>Faculdade IMES — graduação em andamento</p>
+            <h3 data-i18n-lang="pt">Análise e Desenvolvimento de Sistemas</h3>
+            <h3 data-i18n-lang="en">Systems Analysis and Development</h3>
+            <p data-i18n-lang="pt">Faculdade IMES — graduação em andamento</p>
+            <p data-i18n-lang="en">IMES College — degree in progress</p>
           </div>
           <div class="item">
             <span>12/2025 — 06/2026</span>
-            <h3>Full Stack Python</h3>
-            <p>Curso profissionalizante — EBAC</p>
+            <h3 data-i18n-lang="pt">Full Stack Python</h3>
+            <h3 data-i18n-lang="en">Full Stack Python</h3>
+            <p data-i18n-lang="pt">Curso profissionalizante — EBAC</p>
+            <p data-i18n-lang="en">Professional course — EBAC</p>
           </div>
           <div class="item">
-            <span>01/2026 - 05/2026</span>
-            <h3>DevOps &amp; DevSecOps</h3>
-            <p>Especialização — Programa Hackers do Bem</p>
+            <span>01/2026 — 05/2026</span>
+            <h3 data-i18n-lang="pt">DevOps &amp; DevSecOps</h3>
+            <h3 data-i18n-lang="en">DevOps &amp; DevSecOps</h3>
+            <p data-i18n-lang="pt">Especialização — Programa Hackers do Bem</p>
+            <p data-i18n-lang="en">Specialization — Hackers do Bem Program</p>
+          </div>
+          <div class="item">
+            <span>09/2026</span>
+            <h3 data-i18n-lang="pt">Teste de Software (QA)</h3>
+            <h3 data-i18n-lang="en">Software Testing (QA)</h3>
+            <p data-i18n-lang="pt">Curso concluído — EBAC: Postman, Cypress, BDD/Gherkin e CI/CD</p>
+            <p data-i18n-lang="en">Completed course — EBAC: Postman, Cypress, BDD/Gherkin and CI/CD</p>
           </div>
         </div>
       </div>
@@ -132,43 +176,51 @@
   <section id="competencias">
     <div class="wrap">
       <div class="section-head">
-        <p class="section-kicker">Stack técnica</p>
-        <h2>Competências</h2>
+        <p class="section-kicker" data-i18n-lang="pt">Stack técnica</p>
+        <p class="section-kicker" data-i18n-lang="en">Technical stack</p>
+        <h2 data-i18n-lang="pt">Competências</h2>
+        <h2 data-i18n-lang="en">Skills</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-card">
           <h3><span class="dot" aria-hidden="true"></span>
-            <span>Back-end &amp; linguagens</span>
+            <span data-i18n-lang="pt">Back-end &amp; linguagens</span>
+            <span data-i18n-lang="en">Back-end &amp; languages</span>
           </h3>
           <p>Java 17, Spring Boot 3, Python (FastAPI, Django), TypeScript, arquitetura em camadas (DTOs), APIs RESTful, POO e programação assíncrona.</p>
         </div>
         <div class="skill-card">
           <h3><span class="dot" aria-hidden="true"></span>
-            <span>Front-end</span>
+            <span data-i18n-lang="pt">Front-end</span>
+            <span data-i18n-lang="en">Front-end</span>
           </h3>
           <p>React.js, Next.js (App Router), TypeScript, Tailwind CSS, Context API, CSS Modules, HTML5, CSS3, Bootstrap e SASS.</p>
         </div>
         <div class="skill-card">
           <h3><span class="dot" aria-hidden="true"></span>
-            <span>Banco de dados &amp; cache</span>
+            <span data-i18n-lang="pt">Banco de dados &amp; cache</span>
+            <span data-i18n-lang="en">Databases &amp; cache</span>
           </h3>
           <p>PostgreSQL, SQLite, H2 Database, Redis e ORM com Spring Data JPA e SQLAlchemy.</p>
         </div>
         <div class="skill-card">
           <h3><span class="dot" aria-hidden="true"></span>
-            <span>Testes &amp; qualidade</span>
+            <span data-i18n-lang="pt">Testes &amp; qualidade</span>
+            <span data-i18n-lang="en">Testing &amp; quality</span>
           </h3>
-          <p>JUnit 5, MockMvc, Pytest (Pytest-Cov), Swagger UI / OpenAPI e validação de regras de negócio via códigos HTTP.</p>
+          <p>JUnit 5, MockMvc, Pytest (Pytest-Cov), Postman, Cypress, BDD/Gherkin, Swagger UI / OpenAPI e validação de regras de negócio via códigos HTTP.</p>
         </div>
         <div class="skill-card">
           <h3><span class="dot" aria-hidden="true"></span>
-            <span>DevOps, CI/CD &amp; segurança</span>
+            <span data-i18n-lang="pt">DevOps, CI/CD &amp; segurança</span>
+            <span data-i18n-lang="en">DevOps, CI/CD &amp; security</span>
           </h3>
           <p>Docker, Docker Compose, GitHub Actions, Kubernetes, ELK Stack, fundamentos de DevSecOps e sanitização de dados.</p>
         </div>
         <div class="skill-card">
           <h3><span class="dot" aria-hidden="true"></span>
-            <span>Ferramentas &amp; metodologias</span>
+            <span data-i18n-lang="pt">Ferramentas &amp; metodologias</span>
+            <span data-i18n-lang="en">Tools &amp; methodologies</span>
           </h3>
           <p>Git, GitHub, Maven, Poetry, Scrum e Kanban.</p>
         </div>
@@ -180,8 +232,10 @@
   <section id="projetos">
     <div class="wrap">
       <div class="section-head">
-        <p class="section-kicker">Portfólio</p>
-        <h2>Projetos relevantes</h2>
+        <p class="section-kicker" data-i18n-lang="pt">Portfólio</p>
+        <p class="section-kicker" data-i18n-lang="en">Portfolio</p>
+        <h2 data-i18n-lang="pt">Projetos relevantes</h2>
+        <h2 data-i18n-lang="en">Relevant projects</h2>
       </div>
 
       <article class="project">
@@ -190,8 +244,10 @@
           <time>09/2026</time>
         </div>
         <div>
-          <h3>Sistema de Controle de Oficina Mecânica</h3>
-          <p>API RESTful para gestão centralizada de clientes, veículos e ordens de serviço. Arquitetura em camadas com DTOs, validação de CPF/placa, persistência H2/PostgreSQL e conteinerização com Docker Compose. Suíte de testes de integração (JUnit 5 + MockMvc) e documentação via Swagger UI.</p>
+          <h3 data-i18n-lang="pt">Sistema de Controle de Oficina Mecânica</h3>
+          <h3 data-i18n-lang="en">Auto Repair Shop Management System</h3>
+          <p data-i18n-lang="pt">API RESTful para gestão centralizada de clientes, veículos e ordens de serviço. Arquitetura em camadas com DTOs, validação de CPF/placa, persistência H2/PostgreSQL e conteinerização com Docker Compose. Suíte de testes de integração (JUnit 5 + MockMvc) e documentação via Swagger UI.</p>
+          <p data-i18n-lang="en">A RESTful API for centralized management of customers, vehicles and service orders. Layered architecture with DTOs, CPF/plate validation, H2/PostgreSQL persistence and Docker Compose containerization. Integration test suite (JUnit 5 + MockMvc) and Swagger UI documentation.</p>
           <div class="project-links">
             <a href="https://github.com/Li-code1/oficina-mecanica-spring.git" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -204,8 +260,10 @@
           <time>09/2026</time>
         </div>
         <div>
-          <h3>Gerenciador de Estoque Web</h3>
-          <p>Aplicação web de inventário modernizada a partir de um script CLI. Padrão MVT, modelagem via ORM, Class-Based Views para CRUD completo e gerenciamento de dependências com Poetry. Painel administrativo com filtros de busca.</p>
+          <h3 data-i18n-lang="pt">Gerenciador de Estoque Web</h3>
+          <h3 data-i18n-lang="en">Web Inventory Manager</h3>
+          <p data-i18n-lang="pt">Aplicação web de inventário modernizada a partir de um script CLI. Padrão MVT, modelagem via ORM, Class-Based Views para CRUD completo e gerenciamento de dependências com Poetry. Painel administrativo com filtros de busca.</p>
+          <p data-i18n-lang="en">A web inventory application modernized from a CLI script. MVT pattern, ORM-based modeling, Class-Based Views for full CRUD, and dependency management with Poetry. Admin panel with search filters.</p>
           <div class="project-links">
             <a href="https://github.com/Li-code1/gerenciar-estoque-django.git" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -219,10 +277,12 @@
         </div>
         <div>
           <h3>PokeFast API</h3>
-          <p>API RESTful de alta performance que combina consumo assíncrono (asyncio/httpx) da PokéAPI com repositório relacional local (CRUD). Cache temporário com Redis, schemas validados com Pydantic, conteinerização Docker e CI/CD via GitHub Actions. Publicada em produção na Render.</p>
+          <p data-i18n-lang="pt">API RESTful de alta performance que combina consumo assíncrono (asyncio/httpx) da PokéAPI com repositório relacional local (CRUD). Cache temporário com Redis, schemas validados com Pydantic, conteinerização Docker e CI/CD via GitHub Actions. Publicada em produção na Render.</p>
+          <p data-i18n-lang="en">A high-performance RESTful API combining async consumption (asyncio/httpx) of the PokéAPI with a local relational repository (CRUD). Temporary Redis caching, Pydantic-validated schemas, Docker containerization and GitHub Actions CI/CD. Deployed to production on Render.</p>
           <div class="project-links">
             <a href="https://github.com/Li-code1/pokefast-api.git" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://pokefast-api-ebac.onrender.com/docs" rel="noopener">Visualizar</a>
+            <a href="https://pokefast-api-ebac.onrender.com/docs" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://pokefast-api-ebac.onrender.com/docs" rel="noopener" data-i18n-lang="en">Live demo</a>
           </div>
         </div>
       </article>
@@ -233,11 +293,14 @@
           <time>01/2026</time>
         </div>
         <div>
-          <h3>Portal de Viagens</h3>
-          <p>Aplicação para exploração turística com Next.js 14 (App Router), rotas dinâmicas por ID, componentes reutilizáveis, layouts persistentes e estilos isolados via CSS Modules.</p>
+          <h3 data-i18n-lang="pt">Portal de Viagens</h3>
+          <h3 data-i18n-lang="en">Travel Portal</h3>
+          <p data-i18n-lang="pt">Aplicação para exploração turística com Next.js 14 (App Router), rotas dinâmicas por ID, componentes reutilizáveis, layouts persistentes e estilos isolados via CSS Modules.</p>
+          <p data-i18n-lang="en">A tourism exploration app built with Next.js 14 (App Router), dynamic ID-based routes, reusable components, persistent layouts and CSS Modules-isolated styling.</p>
           <div class="project-links">
             <a href="https://github.com/Li-code1/portal-viagens.git" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://portal-viagens-mocha.vercel.app" rel="noopener">Visualizar</a>
+            <a href="https://portal-viagens-mocha.vercel.app" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://portal-viagens-mocha.vercel.app" rel="noopener" data-i18n-lang="en">Live demo</a>
           </div>
         </div>
       </article>
@@ -249,10 +312,12 @@
         </div>
         <div>
           <h3>Pet&amp;Style</h3>
-          <p>Interface para uma loja fictícia de produtos pet, com HTML5 semântico, Tailwind CSS mobile-first, grid adaptável de produtos e JavaScript puro para menu hambúrguer e footer dinâmico.</p>
+          <p data-i18n-lang="pt">Interface para uma loja fictícia de produtos pet, com HTML5 semântico, Tailwind CSS mobile-first, grid adaptável de produtos e JavaScript puro para menu hambúrguer e footer dinâmico.</p>
+          <p data-i18n-lang="en">An interface for a fictional pet store, with semantic HTML5, mobile-first Tailwind CSS, an adaptive product grid, and vanilla JavaScript for the hamburger menu and dynamic footer.</p>
           <div class="project-links">
             <a href="https://github.com/Li-code1/petstyle-loja-virtual.git" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://li-code1.github.io/petstyle-loja-virtual" rel="noopener">Visualizar</a>
+            <a href="https://li-code1.github.io/petstyle-loja-virtual" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://li-code1.github.io/petstyle-loja-virtual" rel="noopener" data-i18n-lang="en">Live demo</a>
           </div>
         </div>
       </article>
@@ -264,10 +329,47 @@
         </div>
         <div>
           <h3>SmartFinance</h3>
-          <p>Plataforma de inteligência financeira que transforma transações em métricas analíticas e metas de economia. Dashboard interativo (Recharts), autenticação real e multiusuário com Supabase (PostgreSQL + Row Level Security) e relatórios exportáveis em PDF (jsPDF + html2canvas).</p>
+          <p data-i18n-lang="pt">Plataforma de inteligência financeira desenvolvida em React, TypeScript e Vite, que transforma transações em métricas analíticas e metas de economia. Dashboard interativo (Recharts), autenticação real e multiusuário com Supabase (PostgreSQL + Row Level Security), arquitetura PWA com cache offline e relatórios exportáveis em PDF (jsPDF + html2canvas).</p>
+          <p data-i18n-lang="en">A financial intelligence platform built with React, TypeScript and Vite, turning transactions into analytical metrics and savings goals. Interactive dashboard (Recharts), real multi-user authentication with Supabase (PostgreSQL + Row Level Security), an offline-capable PWA architecture, and PDF-exportable reports (jsPDF + html2canvas).</p>
           <div class="project-links">
             <a href="https://github.com/Li-code1/smart-finance.git" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://smart-finance-teal-six.vercel.app" rel="noopener">Visualizar</a>
+            <a href="https://smart-finance-teal-six.vercel.app" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://smart-finance-teal-six.vercel.app" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">React · TypeScript · Vite · Supabase</span>
+          <time>2026</time>
+        </div>
+        <div>
+          <h3>ReviseTI</h3>
+          <p data-i18n-lang="pt">Plataforma pessoal de estudos e revisão de conteúdos de TI, baseada no cronograma de Full Stack Python + React (5 semanas). Esta primeira etapa entrega a fundação do projeto: autenticação e banco de dados com Supabase (RLS), navegação com React Router e layout responsivo. Conteúdo completo das aulas, gráficos avançados e repetição espaçada entram em etapas futuras.</p>
+          <p data-i18n-lang="en">A personal study and review platform for IT content, based on a 5-week Full Stack Python + React curriculum. This first stage delivers the project's foundation: authentication and database with Supabase (RLS), React Router navigation, and a responsive layout. Full lesson content, advanced charts and spaced repetition are planned for future stages.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/ReviseTi" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://revise-ti.vercel.app" target="_blank" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://revise-ti.vercel.app" target="_blank" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">React · TypeScript · Supabase</span>
+          <time>2026</time>
+        </div>
+        <div>
+          <h3 data-i18n-lang="pt">Portal de Acompanhamento</h3>
+          <h3 data-i18n-lang="en">Client Follow-up Portal</h3>
+          <p data-i18n-lang="pt">Sistema para profissionais de acompanhamento gerenciarem clientes: cadastro de clientes, atribuição de metas, materiais e sessões, registro de feedback, envio de lembretes e acompanhamento de desempenho — cada cliente acessa pelo próprio login.</p>
+          <p data-i18n-lang="en">A system for coaches and therapists to manage clients: client registration, goal/material/session assignment, feedback logging, reminders, and performance tracking — each client accesses their own login.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/portal-liliane" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://portal-liliane.vercel.app" target="_blank" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://portal-liliane.vercel.app" target="_blank" rel="noopener" data-i18n-lang="en">Live demo</a>
           </div>
         </div>
       </article>
@@ -278,8 +380,35 @@
   <section id="experiencia">
     <div class="wrap">
       <div class="section-head">
-        <p class="section-kicker">Bagagem profissional</p>
-        <h2>Experiência</h2>
+        <p class="section-kicker" data-i18n-lang="pt">Bagagem profissional</p>
+        <p class="section-kicker" data-i18n-lang="en">Professional background</p>
+        <h2 data-i18n-lang="pt">Experiência</h2>
+        <h2 data-i18n-lang="en">Experience</h2>
+      </div>
+      <div class="exp-card">
+        <header>
+          <h3 data-i18n-lang="pt">Terapeuta Online — Psicanalista Clínica e PNL</h3>
+          <h3 data-i18n-lang="en">Online Therapist — Clinical Psychoanalyst &amp; NLP</h3>
+          <span>09/2023 — <span data-i18n-lang="pt">atual</span><span data-i18n-lang="en">present</span></span>
+        </header>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">Escuta ativa e acompanhamento terapêutico</h4>
+          <h4 data-i18n-lang="en">Active listening and therapeutic support</h4>
+          <p data-i18n-lang="pt">Atendimento clínico autônomo combinando Psicanálise, TCC e PNL para transformar demandas emocionais complexas em passos práticos de desenvolvimento pessoal.</p>
+          <p data-i18n-lang="en">Independent clinical practice combining psychoanalysis, CBT and NLP to turn complex emotional demands into practical steps for personal development.</p>
+        </div>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">Suporte ao bem-estar corporativo</h4>
+          <h4 data-i18n-lang="en">Corporate well-being support</h4>
+          <p data-i18n-lang="pt">Intervenção no manejo de estresse, burnout e ansiedade, ajudando profissionais a fortalecerem a inteligência emocional e a lidarem melhor com desafios do ambiente de trabalho.</p>
+          <p data-i18n-lang="en">Support with stress, burnout and anxiety management, helping professionals strengthen emotional intelligence and better navigate workplace challenges.</p>
+        </div>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">Gestão autônoma da prática clínica</h4>
+          <h4 data-i18n-lang="en">Independent practice management</h4>
+          <p data-i18n-lang="pt">Responsabilidade completa pela prática online — da organização dos atendimentos ao acompanhamento personalizado de cada caso.</p>
+          <p data-i18n-lang="en">Full ownership of the online practice — from scheduling to personalized follow-up for each case.</p>
+        </div>
       </div>
       <div class="exp-card">
         <header>
@@ -287,16 +416,22 @@
           <span>08/2007 — 12/2014</span>
         </header>
         <div class="exp-role">
-          <h4>Operações Financeiras e Tesouraria (2009–2014)</h4>
-          <p>Execução de rotinas de caixa de alto fluxo (pagamentos, saques, depósitos e conciliações), com exatidão operacional e cumprimento integral das normas de conformidade e segurança bancária.</p>
+          <h4 data-i18n-lang="pt">Operações Financeiras e Tesouraria (2009–2014)</h4>
+          <h4 data-i18n-lang="en">Financial Operations &amp; Treasury (2009–2014)</h4>
+          <p data-i18n-lang="pt">Execução de rotinas de caixa de alto fluxo (pagamentos, saques, depósitos e conciliações), com exatidão operacional e cumprimento integral das normas de conformidade e segurança bancária.</p>
+          <p data-i18n-lang="en">Handled high-volume teller operations (payments, withdrawals, deposits and reconciliations) with operational accuracy and full compliance with banking security standards.</p>
         </div>
         <div class="exp-role">
-          <h4>Venda Consultiva e Negociação (2007–2009)</h4>
-          <p>Comercialização de produtos financeiros (crédito consignado, seguros, cartões e previdência privada) na FAI, com foco em metas e prospecção de públicos diversos.</p>
+          <h4 data-i18n-lang="pt">Venda Consultiva e Negociação (2007–2009)</h4>
+          <h4 data-i18n-lang="en">Consultative Sales &amp; Negotiation (2007–2009)</h4>
+          <p data-i18n-lang="pt">Comercialização de produtos financeiros (crédito consignado, seguros, cartões e previdência privada) na FAI, com foco em metas e prospecção de públicos diversos.</p>
+          <p data-i18n-lang="en">Sold financial products (payroll loans, insurance, cards and private pension plans) at FAI, focused on hitting targets and prospecting diverse customer segments.</p>
         </div>
         <div class="exp-role">
-          <h4>Atendimento e Resolução de Problemas</h4>
-          <p>Diagnóstico ágil das demandas dos clientes, aplicando inteligência emocional, adaptabilidade e técnicas de retenção.</p>
+          <h4 data-i18n-lang="pt">Atendimento e Resolução de Problemas</h4>
+          <h4 data-i18n-lang="en">Customer Service &amp; Problem Solving</h4>
+          <p data-i18n-lang="pt">Diagnóstico ágil das demandas dos clientes, aplicando inteligência emocional, adaptabilidade e técnicas de retenção.</p>
+          <p data-i18n-lang="en">Quickly diagnosed customer needs, applying emotional intelligence, adaptability and retention techniques.</p>
         </div>
       </div>
     </div>
@@ -307,8 +442,10 @@
     <div class="wrap">
       <div class="contact-card">
         <div>
-          <h2>Vamos conversar?</h2>
-          <p>Estou em busca da minha primeira oportunidade como desenvolvedora full stack, presencial ou híbrida em Praia Grande e região, ou remota em qualquer lugar do Brasil.</p>
+          <h2 data-i18n-lang="pt">Vamos conversar?</h2>
+          <h2 data-i18n-lang="en">Let's talk</h2>
+          <p data-i18n-lang="pt">Estou em busca da minha primeira oportunidade como desenvolvedora full stack, presencial ou híbrida em Praia Grande e região, ou remota em qualquer lugar do Brasil.</p>
+          <p data-i18n-lang="en">I'm looking for my first opportunity as a full stack developer — on-site or hybrid in Praia Grande and the surrounding area, or remote anywhere in Brazil.</p>
         </div>
         <div class="contact-links">
           <a href="mailto:lilianelimafullstackdeveloper@gmail.com">✉️ lilianelimafullstackdeveloper@gmail.com</a>
@@ -325,21 +462,30 @@
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <p class="footer-name">Liliane de Lima Santos</p>
-      <p>Desenvolvedora Full Stack Júnior</p>
-      <p> SP</p>
+      <p data-i18n-lang="pt">Desenvolvedora Full Stack Júnior</p>
+      <p data-i18n-lang="en">Junior Full Stack Developer</p>
+      <p data-i18n-lang="pt">Praia Grande e região — SP</p>
+      <p data-i18n-lang="en">Praia Grande, Brazil</p>
     </div>
 
     <nav class="footer-nav" aria-label="Links do rodapé">
-      <p class="footer-heading">Navegação</p>
-      <a href="#sobre">Sobre</a>
-      <a href="#competencias">Competências</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#contato">Contato</a>
+      <p class="footer-heading" data-i18n-lang="pt">Navegação</p>
+      <p class="footer-heading" data-i18n-lang="en">Navigation</p>
+      <a href="#sobre" data-i18n-lang="pt">Sobre</a>
+      <a href="#sobre" data-i18n-lang="en">About</a>
+      <a href="#competencias" data-i18n-lang="pt">Competências</a>
+      <a href="#competencias" data-i18n-lang="en">Skills</a>
+      <a href="#projetos" data-i18n-lang="pt">Projetos</a>
+      <a href="#projetos" data-i18n-lang="en">Projects</a>
+      <a href="#experiencia" data-i18n-lang="pt">Experiência</a>
+      <a href="#experiencia" data-i18n-lang="en">Experience</a>
+      <a href="#contato" data-i18n-lang="pt">Contato</a>
+      <a href="#contato" data-i18n-lang="en">Contact</a>
     </nav>
 
     <address class="footer-contact">
-      <p class="footer-heading">Contato</p>
+      <p class="footer-heading" data-i18n-lang="pt">Contato</p>
+      <p class="footer-heading" data-i18n-lang="en">Contact</p>
       <a href="mailto:lilianelimafullstackdeveloper@gmail.com">lilianelimafullstackdeveloper@gmail.com</a>
       <a href="tel:+5513996079947">(13) 99607-9947</a>
       <a href="https://www.linkedin.com/in/liliane-lima-ti" target="_blank" rel="noopener">LinkedIn</a>
@@ -348,12 +494,13 @@
   </div>
 
   <div class="wrap footer-bottom">
-    <p>© 2026 Liliane de Lima Santos. Todos os direitos reservados.</p>
+    <p data-i18n-lang="pt">© 2026 Liliane de Lima Santos. Todos os direitos reservados.</p>
+    <p data-i18n-lang="en">© 2026 Liliane de Lima Santos. All rights reserved.</p>
   </div>
 </footer>
 
 <button id="scrollTop" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
 
-<script src="script.js"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
