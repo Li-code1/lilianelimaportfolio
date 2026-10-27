@@ -40,6 +40,10 @@
     root.classList.add(lang === 'en' ? 'lang-en' : 'lang-pt');
     langPt.setAttribute('aria-pressed', String(lang === 'pt'));
     langEn.setAttribute('aria-pressed', String(lang === 'en'));
+    // Alt text of screenshots follows the selected language
+    document.querySelectorAll('img[data-alt-pt]').forEach(function (img) {
+      img.setAttribute('alt', lang === 'en' ? img.getAttribute('data-alt-en') : img.getAttribute('data-alt-pt'));
+    });
   }
 
   var savedLang = null;
@@ -82,4 +86,23 @@
   scrollTopBtn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // Lightbox for project screenshots
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.shot').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var img = btn.querySelector('img');
+      if (typeof lightbox.showModal !== 'function') {
+        window.open(img.currentSrc || img.src, '_blank', 'noopener');
+        return;
+      }
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.setAttribute('aria-label', img.alt);
+      lightbox.showModal();
+    });
+  });
+  // Any click on the dialog (backdrop, image or close button) closes it; Esc works natively
+  lightbox.addEventListener('click', function () { lightbox.close(); });
 })();

@@ -17,6 +17,7 @@ Landing page pessoal de **Liliane de Lima Santos**, Desenvolvedora Full Stack J�
 - **Botão "voltar ao topo"** que aparece após rolagem da página.
 - **Bilíngue (PT-BR / EN)** — todo o conteúdo pode ser alternado em tempo real, sem recarregar a página.
 - **Download do currículo em PDF** direto pelo botão do menu.
+- **Prints dos projetos** com visualização ampliada (lightbox acessível, fecha com `Esc` ou clique) e textos alternativos que acompanham o idioma escolhido.
 - **HTML semântico** (`header`, `nav`, `main`, `section`, `article`, `footer`) e boas práticas de acessibilidade (`aria-*`, foco visível, `prefers-reduced-motion`).
 - Sem dependências de build — basta abrir o `index.html` ou publicar em qualquer hospedagem de arquivos estáticos.
 
@@ -27,13 +28,15 @@ Paleta em **tons de rosa e lilás suaves**, escolhida para transmitir empatia, a
 ## 🗂️ Estrutura do projeto
 
 ```
-portfolio-liliane/
+lilianelimaportfolio-main/
 ├── index.html              # Estrutura e conteúdo da página
-├── style.css                # Estilos, temas (claro/escuro) e responsividade
-├── script.js                 # Interatividade (tema, idioma, menu, scroll-to-top)
+├── style.css               # Estilos, temas (claro/escuro) e responsividade
+├── script.js               # Interatividade (tema, idioma, menu, lightbox, scroll-to-top)
 ├── assets/
-│   ├── profile-photo.jpg     # Foto de perfil
-│   └── Liliane-de-Lima-Santos-CV.pdf   # Currículo para download
+│   ├── profile-photo.jpg   # Foto de perfil
+│   ├── Liliane-de-Lima-Santos-CV.pdf   # Currículo para download
+│   ├── favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png
+│   └── projects/           # Prints dos projetos e das landing pages (WebP)
 └── README.md
 ```
 
