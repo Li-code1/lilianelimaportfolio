@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt" class="lang-pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liliane de Lima Santos — Desenvolvedora Web Full Stack, WordPress e Shopify</title>
+<meta name="description" content="Portfólio de Liliane de Lima Santos, desenvolvedora Web Full Stack: sistemas em Python, Java e React, sites em WordPress, lojas Shopify, SEO e uso de IA generativa.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Liliane de Lima Santos — Desenvolvedora Web Full Stack, WordPress e Shopify">
+<meta property="og:description" content="Portfólio de Liliane de Lima Santos, desenvolvedora Web Full Stack: sistemas em Python, Java e React, sites em WordPress, lojas Shopify, SEO e uso de IA generativa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico?v=4" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=4">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=4">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=4">
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <div class="brand">
+      Liliane de Lima Santos
+      <small data-i18n-lang="pt">Desenvolvedora Web Full Stack</small>
+      <small data-i18n-lang="en">Full Stack Web Developer</small>
+    </div>
+
+    <nav class="primary-nav" aria-label="Navegação principal">
+      <a href="#sobre" data-i18n-lang="pt">Sobre</a>
+      <a href="#sobre" data-i18n-lang="en">About</a>
+      <a href="#competencias" data-i18n-lang="pt">Competências</a>
+      <a href="#competencias" data-i18n-lang="en">Skills</a>
+      <a href="#projetos" data-i18n-lang="pt">Projetos</a>
+      <a href="#projetos" data-i18n-lang="en">Projects</a>
+      <a href="#experiencia" data-i18n-lang="pt">Experiência</a>
+      <a href="#experiencia" data-i18n-lang="en">Experience</a>
+      <a href="#contato" data-i18n-lang="pt">Contato</a>
+      <a href="#contato" data-i18n-lang="en">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" id="langPt" aria-pressed="true">PT</button>
+        <button type="button" id="langEn" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+      <a class="cta-btn desktop-only" id="downloadCv" href="assets/Liliane-de-Lima-Santos-CV.pdf" download="Liliane-de-Lima-Santos-CV.pdf">
+        <span data-i18n-lang="pt">Baixar currículo</span>
+        <span data-i18n-lang="en">Download resume</span>
+      </a>
+      <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="wrap mobile-panel" id="mobilePanel" aria-label="Menu mobile">
+    <a href="#sobre" data-i18n-lang="pt">Sobre</a>
+    <a href="#sobre" data-i18n-lang="en">About</a>
+    <a href="#competencias" data-i18n-lang="pt">Competências</a>
+    <a href="#competencias" data-i18n-lang="en">Skills</a>
+    <a href="#projetos" data-i18n-lang="pt">Projetos</a>
+    <a href="#projetos" data-i18n-lang="en">Projects</a>
+    <a href="#experiencia" data-i18n-lang="pt">Experiência</a>
+    <a href="#experiencia" data-i18n-lang="en">Experience</a>
+    <a href="#contato" data-i18n-lang="pt">Contato</a>
+    <a href="#contato" data-i18n-lang="en">Contact</a>
+    <a id="downloadCvMobile" href="assets/Liliane-de-Lima-Santos-CV.pdf" download="Liliane-de-Lima-Santos-CV.pdf">
+      <span data-i18n-lang="pt">Baixar currículo</span>
+      <span data-i18n-lang="en">Download resume</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <!-- BANNER TECNOLÓGICO -->
+  <div class="tech-banner" id="techBanner">
+    <img class="tech-banner-img" src="assets/banner-tech.webp" width="1584" height="672" alt="" fetchpriority="high" decoding="async">
+    <canvas id="techCanvas" aria-hidden="true"></canvas>
+    <div class="tech-banner-content">
+      <span class="tb-status">
+        <i aria-hidden="true"></i>
+        <span data-i18n-lang="pt">Aberta a oportunidades</span>
+        <span data-i18n-lang="en">Open to opportunities</span>
+      </span>
+      <p class="tb-terminal" aria-hidden="true"><span class="tb-prompt">&gt;</span><span id="typedText"></span><span class="tb-caret"></span></p>
+      <ul class="tb-chips" aria-label="Tecnologias">
+        <li>Python</li>
+        <li>Java</li>
+        <li>React</li>
+        <li>WordPress</li>
+        <li>Shopify</li>
+        <li>SEO</li>
+        <li data-i18n-lang="pt">IA generativa</li>
+        <li data-i18n-lang="en">Generative AI</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="sobre">
+    <div class="wrap hero">
+      <div>
+        <p class="hero-eyebrow">
+          <span data-i18n-lang="pt">Praia Grande – SP · avalio oportunidades em São Paulo (híbrido)</span>
+          <span data-i18n-lang="en">Praia Grande, Brazil · open to hybrid roles in São Paulo</span>
+        </p>
+        <h1 data-i18n-lang="pt">Desenvolvedora Web <em>Full Stack</em></h1>
+        <h1 data-i18n-lang="en">Web Developer <em>Full Stack</em></h1>
+        <p class="lede" data-i18n-lang="pt">
+          Sou Liliane de Lima Santos, desenvolvedora web full stack graduanda em Análise e Desenvolvimento de Sistemas, com especialização em DevSecOps. Crio sistemas, sites e lojas virtuais com Python, Java, React, WordPress e Shopify, com foco em SEO, segurança e conversão.
+        </p>
+        <p class="lede" data-i18n-lang="en">
+          I'm Liliane de Lima Santos, a full stack web developer completing a degree in Systems Analysis and Development, with a specialization in DevSecOps. I build systems, websites and online stores with Python, Java, React, WordPress and Shopify, focused on SEO, security and conversion.
+        </p>
+        <div class="hero-actions">
+          <a class="cta-btn" href="#projetos" data-i18n-lang="pt">Ver projetos</a>
+          <a class="cta-btn" href="#projetos" data-i18n-lang="en">View projects</a>
+          <a class="cta-btn ghost" href="#contato" data-i18n-lang="pt">Falar comigo</a>
+          <a class="cta-btn ghost" href="#contato" data-i18n-lang="en">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="assets/Screenshot_20251006-012312~2.jpg" alt="Retrato de Liliane de Lima Santos">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / FORMAÇÃO -->
+  <section id="formacao">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker" data-i18n-lang="pt">Sobre mim</p>
+        <p class="section-kicker" data-i18n-lang="en">About me</p>
+        <h2 data-i18n-lang="pt">Tecnologia, web e IA aplicada a negócios reais</h2>
+        <h2 data-i18n-lang="en">Technology, web and AI applied to real businesses</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p data-i18n-lang="pt">Trabalho com tecnologia unindo desenvolvimento de software, presença digital e inteligência artificial. Construo APIs, sistemas web, landing pages, sites institucionais em WordPress e lojas virtuais em Shopify, sempre com atenção a desempenho, segurança, SEO e à experiência de quem usa.</p>
+          <p data-i18n-lang="en">I work at the intersection of software development, digital presence and artificial intelligence. I build APIs, web systems, landing pages, WordPress websites and Shopify online stores, always paying attention to performance, security, SEO and the experience of the people who use them.</p>
+          <p data-i18n-lang="pt">Estudo Análise e Desenvolvimento de Sistemas, sou formada em Full Stack Python pela EBAC, concluí o curso de Teste de Software (QA) e me especializei em DevSecOps pelo programa Hackers do Bem (Softex, SENAI, RNP e Ministério da Ciência).</p>
+          <p data-i18n-lang="en">I'm studying Systems Analysis and Development, completed a Full Stack Python program at EBAC, finished a Software Testing (QA) course, and specialized in DevSecOps through the Hackers do Bem program (Softex, SENAI, RNP and the Ministry of Science).</p>
+        </div>
+        <div class="timeline">
+          <div class="item">
+            <span>03/2025 — 10/2027</span>
+            <h3 data-i18n-lang="pt">Análise e Desenvolvimento de Sistemas</h3>
+            <h3 data-i18n-lang="en">Systems Analysis and Development</h3>
+            <p data-i18n-lang="pt">Faculdade IMES — graduação em andamento</p>
+            <p data-i18n-lang="en">IMES College — degree in progress</p>
+          </div>
+          <div class="item">
+            <span>12/2025 — 06/2026</span>
+            <h3 data-i18n-lang="pt">Full Stack Python</h3>
+            <h3 data-i18n-lang="en">Full Stack Python</h3>
+            <p data-i18n-lang="pt">Curso profissionalizante — EBAC</p>
+            <p data-i18n-lang="en">Professional course — EBAC</p>
+          </div>
+          <div class="item">
+            <span>01/2026 — 05/2026</span>
+            <h3 data-i18n-lang="pt">DevOps &amp; DevSecOps</h3>
+            <h3 data-i18n-lang="en">DevOps &amp; DevSecOps</h3>
+            <p data-i18n-lang="pt">Especialização — Programa Hackers do Bem</p>
+            <p data-i18n-lang="en">Specialization — Hackers do Bem Program</p>
+          </div>
+          <div class="item">
+            <span>09/2026</span>
+            <h3 data-i18n-lang="pt">Teste de Software (QA)</h3>
+            <h3 data-i18n-lang="en">Software Testing (QA)</h3>
+            <p data-i18n-lang="pt">Curso concluído — EBAC: Postman, Cypress, BDD/Gherkin e CI/CD</p>
+            <p data-i18n-lang="en">Completed course — EBAC: Postman, Cypress, BDD/Gherkin and CI/CD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETÊNCIAS -->
+  <section id="competencias">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker" data-i18n-lang="pt">Stack técnica</p>
+        <p class="section-kicker" data-i18n-lang="en">Technical stack</p>
+        <h2 data-i18n-lang="pt">Competências</h2>
+        <h2 data-i18n-lang="en">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">Back-end &amp; linguagens</span>
+            <span data-i18n-lang="en">Back-end &amp; languages</span>
+          </h3>
+          <p>Java 17, Spring Boot 3, Python (FastAPI, Django), TypeScript, arquitetura em camadas (DTOs), APIs RESTful, POO e programação assíncrona.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">Front-end</span>
+            <span data-i18n-lang="en">Front-end</span>
+          </h3>
+          <p>React.js, Next.js (App Router), TypeScript, Tailwind CSS, Context API, CSS Modules, HTML5, CSS3, Bootstrap e SASS.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">Banco de dados &amp; cache</span>
+            <span data-i18n-lang="en">Databases &amp; cache</span>
+          </h3>
+          <p>PostgreSQL, SQLite, H2 Database, Redis e ORM com Spring Data JPA e SQLAlchemy.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">Testes &amp; qualidade</span>
+            <span data-i18n-lang="en">Testing &amp; quality</span>
+          </h3>
+          <p>JUnit 5, MockMvc, Pytest (Pytest-Cov), Postman, Cypress, BDD/Gherkin, Swagger UI / OpenAPI e validação de regras de negócio via códigos HTTP.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">DevOps, CI/CD &amp; segurança</span>
+            <span data-i18n-lang="en">DevOps, CI/CD &amp; security</span>
+          </h3>
+          <p>Docker, Docker Compose, GitHub Actions, Kubernetes, ELK Stack, fundamentos de DevSecOps e sanitização de dados.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">Ferramentas &amp; metodologias</span>
+            <span data-i18n-lang="en">Tools &amp; methodologies</span>
+          </h3>
+          <p>Git, GitHub, Maven, Poetry, Scrum e Kanban.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">IA generativa</span>
+            <span data-i18n-lang="en">Generative AI</span>
+          </h3>
+          <p data-i18n-lang="pt">Engenharia de prompts, automação de fluxos, geração de textos e imagens e avaliação crítica dos resultados gerados.</p>
+          <p data-i18n-lang="en">Prompt engineering, workflow automation, text and image generation, and critical evaluation of generated results.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">SEO &amp; performance</span>
+            <span data-i18n-lang="en">SEO &amp; performance</span>
+          </h3>
+          <p data-i18n-lang="pt">SEO on-page e técnico, HTML semântico, metadados, dados estruturados, Google Search Console, Google Analytics, Core Web Vitals e otimização de velocidade.</p>
+          <p data-i18n-lang="en">On-page and technical SEO, semantic HTML, metadata, structured data, Google Search Console, Google Analytics, Core Web Vitals and speed optimization.</p>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot" aria-hidden="true"></span>
+            <span data-i18n-lang="pt">E-commerce, Shopify &amp; WordPress</span>
+            <span data-i18n-lang="en">E-commerce, Shopify &amp; WordPress</span>
+          </h3>
+          <p data-i18n-lang="pt">Lojas virtuais em Shopify (temas, produtos, coleções, pagamentos e frete) e sites em WordPress (temas, plugins, WooCommerce, Elementor), com domínio, hospedagem e publicação.</p>
+          <p data-i18n-lang="en">Online stores on Shopify (themes, products, collections, payments and shipping) and WordPress websites (themes, plugins, WooCommerce, Elementor), including domain, hosting and launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker" data-i18n-lang="pt">Portfólio</p>
+        <p class="section-kicker" data-i18n-lang="en">Portfolio</p>
+        <h2 data-i18n-lang="pt">Projetos relevantes</h2>
+        <h2 data-i18n-lang="en">Relevant projects</h2>
+      </div>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Java · Spring Boot 3</span>
+          <time>09/2026</time>
+        </div>
+        <div>
+          <h3 data-i18n-lang="pt">Sistema de Controle de Oficina Mecânica</h3>
+          <h3 data-i18n-lang="en">Auto Repair Shop Management System</h3>
+          <p data-i18n-lang="pt">API RESTful para gestão centralizada de clientes, veículos e ordens de serviço. Arquitetura em camadas com DTOs, validação de CPF/placa, persistência H2/PostgreSQL e conteinerização com Docker Compose. Suíte de testes de integração (JUnit 5 + MockMvc) e documentação via Swagger UI.</p>
+          <p data-i18n-lang="en">A RESTful API for centralized management of customers, vehicles and service orders. Layered architecture with DTOs, CPF/plate validation, H2/PostgreSQL persistence and Docker Compose containerization. Integration test suite (JUnit 5 + MockMvc) and Swagger UI documentation.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/oficina-mecanica-spring.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Python · Django</span>
+          <time>09/2026</time>
+        </div>
+        <div>
+          <h3 data-i18n-lang="pt">Gerenciador de Estoque Web</h3>
+          <h3 data-i18n-lang="en">Web Inventory Manager</h3>
+          <p data-i18n-lang="pt">Aplicação web de inventário modernizada a partir de um script CLI. Padrão MVT, modelagem via ORM, Class-Based Views para CRUD completo e gerenciamento de dependências com Poetry. Painel administrativo com filtros de busca.</p>
+          <p data-i18n-lang="en">A web inventory application modernized from a CLI script. MVT pattern, ORM-based modeling, Class-Based Views for full CRUD, and dependency management with Poetry. Admin panel with search filters.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/gerenciar-estoque-django.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Python · FastAPI · Redis</span>
+          <time>06/2026</time>
+        </div>
+        <div>
+          <h3>PokeFast API</h3>
+          <p data-i18n-lang="pt">API RESTful de alta performance que combina consumo assíncrono (asyncio/httpx) da PokéAPI com repositório relacional local (CRUD). Cache temporário com Redis, schemas validados com Pydantic, conteinerização Docker e CI/CD via GitHub Actions. Publicada em produção na Render.</p>
+          <p data-i18n-lang="en">A high-performance RESTful API combining async consumption (asyncio/httpx) of the PokéAPI with a local relational repository (CRUD). Temporary Redis caching, Pydantic-validated schemas, Docker containerization and GitHub Actions CI/CD. Deployed to production on Render.</p>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/pokefast-api.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://pokefast-api-ebac.onrender.com/docs" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://pokefast-api-ebac.onrender.com/docs" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">Next.js 14</span>
+          <time>01/2026</time>
+        </div>
+        <div>
+          <h3 data-i18n-lang="pt">Portal de Viagens</h3>
+          <h3 data-i18n-lang="en">Travel Portal</h3>
+          <p data-i18n-lang="pt">Aplicação para exploração turística com Next.js 14 (App Router), rotas dinâmicas por ID, componentes reutilizáveis, layouts persistentes e estilos isolados via CSS Modules.</p>
+          <p data-i18n-lang="en">A tourism exploration app built with Next.js 14 (App Router), dynamic ID-based routes, reusable components, persistent layouts and CSS Modules-isolated styling.</p>
+          <ul class="shots">
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/portal-viagens.webp" width="800" height="520" loading="lazy" decoding="async" alt="Página do destino Paris no Portal de Viagens, com foto da Torre Eiffel e descrição" data-alt-pt="Página do destino Paris no Portal de Viagens, com foto da Torre Eiffel e descrição" data-alt-en="Paris destination page in the Travel Portal, with a photo of the Eiffel Tower and a description"></button></li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/portal-viagens.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://portal-viagens-mocha.vercel.app" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://portal-viagens-mocha.vercel.app" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">HTML5 · Tailwind CSS</span>
+          <time>12/2025</time>
+        </div>
+        <div>
+          <h3>Pet&amp;Style</h3>
+          <p data-i18n-lang="pt">Interface para uma loja fictícia de produtos pet, com HTML5 semântico, Tailwind CSS mobile-first, grid adaptável de produtos e JavaScript puro para menu hambúrguer e footer dinâmico.</p>
+          <p data-i18n-lang="en">An interface for a fictional pet store, with semantic HTML5, mobile-first Tailwind CSS, an adaptive product grid, and vanilla JavaScript for the hamburger menu and dynamic footer.</p>
+          <ul class="shots">
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/petstyle-home.webp" width="1200" height="823" loading="lazy" decoding="async" alt="Página inicial da loja Pet&amp;Style, com o título “Estilo e conforto para seu pet” e foto de um cachorro" data-alt-pt="Página inicial da loja Pet&amp;Style, com o título “Estilo e conforto para seu pet” e foto de um cachorro" data-alt-en="Pet&amp;Style home page, headlined “Style and comfort for your pet”, with a photo of a dog"></button></li>
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/petstyle-produtos.webp" width="1200" height="803" loading="lazy" decoding="async" alt="Seção de produtos e depoimentos de clientes da loja Pet&amp;Style" data-alt-pt="Seção de produtos e depoimentos de clientes da loja Pet&amp;Style" data-alt-en="Pet&amp;Style products and customer testimonials section"></button></li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/petstyle-loja-virtual.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://li-code1.github.io/petstyle-loja-virtual" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://li-code1.github.io/petstyle-loja-virtual" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">React · TypeScript · Supabase</span>
+          <time>06/2026</time>
+        </div>
+        <div>
+          <h3>SmartFinance</h3>
+          <p data-i18n-lang="pt">Plataforma de inteligência financeira desenvolvida em React, TypeScript e Vite, que transforma transações em métricas analíticas e metas de economia. Dashboard interativo (Recharts), autenticação real e multiusuário com Supabase (PostgreSQL + Row Level Security), arquitetura PWA com cache offline e relatórios exportáveis em PDF (jsPDF + html2canvas).</p>
+          <p data-i18n-lang="en">A financial intelligence platform built with React, TypeScript and Vite, turning transactions into analytical metrics and savings goals. Interactive dashboard (Recharts), real multi-user authentication with Supabase (PostgreSQL + Row Level Security), an offline-capable PWA architecture, and PDF-exportable reports (jsPDF + html2canvas).</p>
+          <ul class="shots">
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/smartfinance-dashboard.webp" width="1200" height="810" loading="lazy" decoding="async" alt="Painel do SmartFinance com indicadores de gastos, gráfico de composição por categoria e projeção semestral acumulada" data-alt-pt="Painel do SmartFinance com indicadores de gastos, gráfico de composição por categoria e projeção semestral acumulada" data-alt-en="SmartFinance dashboard with spending indicators, a category breakdown chart and a cumulative six-month projection"></button></li>
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/smartfinance-login.webp" width="608" height="584" loading="lazy" decoding="async" alt="Tela de login do SmartFinance" data-alt-pt="Tela de login do SmartFinance" data-alt-en="SmartFinance login screen"></button></li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/smart-finance.git" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://smart-finance-teal-six.vercel.app" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://smart-finance-teal-six.vercel.app" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">React · TypeScript · Vite · Supabase</span>
+          <time>2026</time>
+        </div>
+        <div>
+          <h3>ReviseTI</h3>
+          <p data-i18n-lang="pt">Plataforma pessoal de estudos e revisão de conteúdos de TI, baseada no cronograma de Full Stack Python + React (5 semanas). Esta primeira etapa entrega a fundação do projeto: autenticação e banco de dados com Supabase (RLS), navegação com React Router e layout responsivo. Conteúdo completo das aulas, gráficos avançados e repetição espaçada entram em etapas futuras.</p>
+          <p data-i18n-lang="en">A personal study and review platform for IT content, based on a 5-week Full Stack Python + React curriculum. This first stage delivers the project's foundation: authentication and database with Supabase (RLS), React Router navigation, and a responsive layout. Full lesson content, advanced charts and spaced repetition are planned for future stages.</p>
+          <ul class="shots">
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/reviseti-dashboard.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Dashboard do ReviseTI com progresso geral, horas estudadas, conteúdos concluídos e progresso por semana" data-alt-pt="Dashboard do ReviseTI com progresso geral, horas estudadas, conteúdos concluídos e progresso por semana" data-alt-en="ReviseTI dashboard with overall progress, hours studied, completed lessons and weekly progress"></button></li>
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/reviseti-conteudos.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Lista de conteúdos da Semana 1 do ReviseTI, com 100% de progresso" data-alt-pt="Lista de conteúdos da Semana 1 do ReviseTI, com 100% de progresso" data-alt-en="ReviseTI Week 1 lesson list, showing 100% progress"></button></li>
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/reviseti-graficos.webp" width="1200" height="818" loading="lazy" decoding="async" alt="Gráficos do ReviseTI: horas estudadas, evolução dos estudos, status das revisões e desempenho nas perguntas" data-alt-pt="Gráficos do ReviseTI: horas estudadas, evolução dos estudos, status das revisões e desempenho nas perguntas" data-alt-en="ReviseTI charts: hours studied, study progress over time, review status and quiz performance"></button></li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/ReviseTi" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://revise-ti.vercel.app" target="_blank" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://revise-ti.vercel.app" target="_blank" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          <span class="tag">React · TypeScript · Supabase</span>
+          <time>2026</time>
+        </div>
+        <div>
+          <h3 data-i18n-lang="pt">Portal de Acompanhamento</h3>
+          <h3 data-i18n-lang="en">Client Follow-up Portal</h3>
+          <p data-i18n-lang="pt">Sistema para profissionais de acompanhamento gerenciarem clientes: cadastro de clientes, atribuição de metas, materiais e sessões, registro de feedback, envio de lembretes e acompanhamento de desempenho — cada cliente acessa pelo próprio login.</p>
+          <p data-i18n-lang="en">A system for coaches and therapists to manage clients: client registration, goal/material/session assignment, feedback logging, reminders, and performance tracking — each client accesses their own login.</p>
+          <ul class="shots">
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/portal-acompanhamento-dashboard.webp" width="1200" height="900" loading="lazy" decoding="async" alt="Dashboard administrativo do Portal de Acompanhamento com clientes ativos, sessões, metas e alertas" data-alt-pt="Dashboard administrativo do Portal de Acompanhamento com clientes ativos, sessões, metas e alertas" data-alt-en="Client Follow-up Portal admin dashboard with active clients, sessions, goals and alerts"></button></li>
+              <li><button type="button" class="shot" aria-haspopup="dialog"><img src="assets/projects/portal-acompanhamento-login.webp" width="1200" height="885" loading="lazy" decoding="async" alt="Tela de login do Portal de Acompanhamento" data-alt-pt="Tela de login do Portal de Acompanhamento" data-alt-en="Client Follow-up Portal login screen"></button></li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Li-code1/portal-liliane" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://portal-liliane.vercel.app" target="_blank" rel="noopener" data-i18n-lang="pt">Visualizar</a>
+            <a href="https://portal-liliane.vercel.app" target="_blank" rel="noopener" data-i18n-lang="en">Live demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker" data-i18n-lang="pt">Atuação profissional</p>
+        <p class="section-kicker" data-i18n-lang="en">Professional background</p>
+        <h2 data-i18n-lang="pt">Experiência</h2>
+        <h2 data-i18n-lang="en">Experience</h2>
+      </div>
+      <div class="exp-card">
+        <header>
+          <h3 data-i18n-lang="pt">Desenvolvedora Web Freelancer</h3>
+          <h3 data-i18n-lang="en">Freelance Web Developer</h3>
+          <span>01/2026 — <span data-i18n-lang="pt">atual</span><span data-i18n-lang="en">present</span></span>
+        </header>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">Sites e landing pages para presença digital</h4>
+          <h4 data-i18n-lang="en">Websites and landing pages for digital presence</h4>
+          <p data-i18n-lang="pt">Desenvolvimento de sites e landing pages para profissionais e negócios que querem fortalecer a presença digital, do layout à publicação online.</p>
+          <p data-i18n-lang="en">Development of websites and landing pages for professionals and businesses that want to strengthen their digital presence, from layout to going live.</p>
+        </div>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">SEO e HTML semântico</h4>
+          <h4 data-i18n-lang="en">SEO and semantic HTML</h4>
+          <p data-i18n-lang="pt">Estrutura com tags semânticas, títulos e metadados bem definidos e boas práticas de SEO, para que o site seja encontrado com mais facilidade nos buscadores.</p>
+          <p data-i18n-lang="en">Semantic tags, well-defined headings and metadata, and SEO best practices, so the site is easier to find on search engines.</p>
+        </div>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">Responsividade e foco em conversão</h4>
+          <h4 data-i18n-lang="en">Responsive design and conversion focus</h4>
+          <p data-i18n-lang="pt">Layouts responsivos, que funcionam bem em celular, tablet e computador, com chamadas para ação claras (como agendamento e WhatsApp) e estrutura pensada para converter visitantes em clientes, e não apenas gerar acessos.</p>
+          <p data-i18n-lang="en">Responsive layouts that work well on mobile, tablet and desktop, with clear calls to action (such as booking and WhatsApp) and a structure built to turn visitors into customers, not just generate traffic.</p>
+        </div>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">E-commerce com Shopify e sites em WordPress</h4>
+          <h4 data-i18n-lang="en">E-commerce with Shopify and WordPress websites</h4>
+          <p data-i18n-lang="pt">Criação e configuração de lojas virtuais e sites institucionais, da identidade visual ao catálogo, meios de pagamento e publicação, com foco em experiência de compra e SEO.</p>
+          <p data-i18n-lang="en">Setup of online stores and business websites, from visual identity to catalog, payment methods and launch, focused on shopping experience and SEO.</p>
+        </div>
+        <div class="exp-role">
+          <h4 data-i18n-lang="pt">Exemplos de sites e landing pages</h4>
+          <h4 data-i18n-lang="en">Examples of websites and landing pages</h4>
+          <ul class="work-grid">
+            <li class="work-item">
+              <a class="work-thumb" href="https://li-code1.github.io/cuidado-em-casa" target="_blank" rel="noopener"><img src="assets/projects/lp-cuidado-em-casa.webp" width="1200" height="823" loading="lazy" decoding="async" alt="Landing page Cuidadora de Idosos Particular, com o título “Cuidado atencioso para quem você mais ama, sem sair de casa” e botão para agendar avaliação" data-alt-pt="Landing page Cuidadora de Idosos Particular, com o título “Cuidado atencioso para quem você mais ama, sem sair de casa” e botão para agendar avaliação" data-alt-en="Private Elderly Caregiver landing page, headlined “Attentive care for those you love most, without leaving home”, with a button to book an assessment"></a>
+              <div class="work-info">
+                <h5><span data-i18n-lang="pt">Cuidadora de Idosos Particular</span><span data-i18n-lang="en">Private Elderly Caregiver</span></h5>
+                <span class="work-niche" data-i18n-lang="pt">Cuidado de idosos em casa</span>
+                <span class="work-niche" data-i18n-lang="en">In-home elderly care</span>
+                <a href="https://li-code1.github.io/cuidado-em-casa" target="_blank" rel="noopener"><span data-i18n-lang="pt">Visitar site →</span><span data-i18n-lang="en">Visit site →</span></a>
+              </div>
+            </li>
+            <li class="work-item">
+              <a class="work-thumb" href="https://acolher-care.vercel.app" target="_blank" rel="noopener"><img src="assets/projects/lp-acolher-care.webp" width="720" height="1342" loading="lazy" decoding="async" alt="Landing page Acolher Care no celular, com o título “Cuidar de quem cuidou de você, em casa e com carinho” e botão para chamar no WhatsApp" data-alt-pt="Landing page Acolher Care no celular, com o título “Cuidar de quem cuidou de você, em casa e com carinho” e botão para chamar no WhatsApp" data-alt-en="Acolher Care landing page on mobile, headlined “Caring for those who cared for you, at home and with affection”, with a WhatsApp button"></a>
+              <div class="work-info">
+                <h5>Acolher Care</h5>
+                <span class="work-niche" data-i18n-lang="pt">Home care para idosos</span>
+                <span class="work-niche" data-i18n-lang="en">Home care for seniors</span>
+                <a href="https://acolher-care.vercel.app" target="_blank" rel="noopener"><span data-i18n-lang="pt">Visitar site →</span><span data-i18n-lang="en">Visit site →</span></a>
+              </div>
+            </li>
+            <li class="work-item">
+              <a class="work-thumb" href="https://dra-maria-carvalho-site.vercel.app" target="_blank" rel="noopener"><img src="assets/projects/lp-dra-maria-carvalho.webp" width="1200" height="808" loading="lazy" decoding="async" alt="Landing page da Dra. Maria Carvalho, cirurgiã-dentista, com foto da profissional e botão de agendamento pelo WhatsApp" data-alt-pt="Landing page da Dra. Maria Carvalho, cirurgiã-dentista, com foto da profissional e botão de agendamento pelo WhatsApp" data-alt-en="Landing page for Dr. Maria Carvalho, a dentist, with her photo and a WhatsApp booking button"></a>
+              <div class="work-info">
+                <h5><span data-i18n-lang="pt">Dra. Maria Carvalho</span><span data-i18n-lang="en">Dr. Maria Carvalho</span></h5>
+                <span class="work-niche" data-i18n-lang="pt">Cirurgiã-dentista</span>
+                <span class="work-niche" data-i18n-lang="en">Dentist</span>
+                <a href="https://dra-maria-carvalho-site.vercel.app" target="_blank" rel="noopener"><span data-i18n-lang="pt">Visitar site →</span><span data-i18n-lang="en">Visit site →</span></a>
+              </div>
+            </li>
+            <li class="work-item">
+              <a class="work-thumb" href="https://elaine-lima-site.vercel.app" target="_blank" rel="noopener"><img src="assets/projects/lp-elaine-lima.webp" width="1200" height="803" loading="lazy" decoding="async" alt="Landing page da psicanalista Elaine Lima, com foto da profissional e botão para agendar sessão" data-alt-pt="Landing page da psicanalista Elaine Lima, com foto da profissional e botão para agendar sessão" data-alt-en="Landing page for psychoanalyst Elaine Lima, with her photo and a button to book a session"></a>
+              <div class="work-info">
+                <h5>Elaine Lima</h5>
+                <span class="work-niche" data-i18n-lang="pt">Psicanalista</span>
+                <span class="work-niche" data-i18n-lang="en">Psychoanalyst</span>
+                <a href="https://elaine-lima-site.vercel.app" target="_blank" rel="noopener"><span data-i18n-lang="pt">Visitar site →</span><span data-i18n-lang="en">Visit site →</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2 data-i18n-lang="pt">Vamos conversar?</h2>
+          <h2 data-i18n-lang="en">Let's talk</h2>
+          <p data-i18n-lang="pt">Estou aberta a oportunidades como desenvolvedora full stack e a projetos de sites, e-commerce (Shopify e WordPress) e SEO, presencial ou híbrida em Praia Grande e região, ou remota em qualquer lugar do Brasil.</p>
+          <p data-i18n-lang="en">I'm open to full stack developer roles and to website, e-commerce (Shopify and WordPress) and SEO projects — on-site or hybrid in Praia Grande and the surrounding area, or remote anywhere in Brazil.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:lilianelimafullstackdeveloper@gmail.com">✉️ lilianelimafullstackdeveloper@gmail.com</a>
+          <a href="tel:+5513996079947">📱 (13) 99607-9947</a>
+          <a href="https://www.linkedin.com/in/liliane-lima-ti" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a href="https://github.com/Li-code1" target="_blank" rel="noopener">🖥️ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">Liliane de Lima Santos</p>
+      <p data-i18n-lang="pt">Desenvolvedora Web Full Stack</p>
+      <p data-i18n-lang="en">Full Stack Web Developer</p>
+      <p data-i18n-lang="pt">Praia Grande e região — SP</p>
+      <p data-i18n-lang="en">Praia Grande, Brazil</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Links do rodapé">
+      <p class="footer-heading" data-i18n-lang="pt">Navegação</p>
+      <p class="footer-heading" data-i18n-lang="en">Navigation</p>
+      <a href="#sobre" data-i18n-lang="pt">Sobre</a>
+      <a href="#sobre" data-i18n-lang="en">About</a>
+      <a href="#competencias" data-i18n-lang="pt">Competências</a>
+      <a href="#competencias" data-i18n-lang="en">Skills</a>
+      <a href="#projetos" data-i18n-lang="pt">Projetos</a>
+      <a href="#projetos" data-i18n-lang="en">Projects</a>
+      <a href="#experiencia" data-i18n-lang="pt">Experiência</a>
+      <a href="#experiencia" data-i18n-lang="en">Experience</a>
+      <a href="#contato" data-i18n-lang="pt">Contato</a>
+      <a href="#contato" data-i18n-lang="en">Contact</a>
+    </nav>
+
+    <address class="footer-contact">
+      <p class="footer-heading" data-i18n-lang="pt">Contato</p>
+      <p class="footer-heading" data-i18n-lang="en">Contact</p>
+      <a href="mailto:lilianelimafullstackdeveloper@gmail.com">lilianelimafullstackdeveloper@gmail.com</a>
+      <a href="tel:+5513996079947">(13) 99607-9947</a>
+      <a href="https://www.linkedin.com/in/liliane-lima-ti" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Li-code1" target="_blank" rel="noopener">GitHub</a>
+    </address>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p data-i18n-lang="pt">© 2026 Liliane de Lima Santos. Todos os direitos reservados.</p>
+    <p data-i18n-lang="en">© 2026 Liliane de Lima Santos. All rights reserved.</p>
+  </div>
+</footer>
+
+<dialog id="lightbox" class="lightbox">
+  <button type="button" class="lightbox-close">
+    <span aria-hidden="true">×</span>
+    <span class="sr-only" data-i18n-lang="pt">Fechar</span>
+    <span class="sr-only" data-i18n-lang="en">Close</span>
+  </button>
+  <img id="lightboxImg" alt="">
+</dialog>
+
+<button id="scrollTop" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+
+<script src="script.js?v=6"></script>
+</body>
+</html>
